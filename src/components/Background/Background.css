@@ -1,0 +1,68 @@
+.header {
+    background-color: #388fcb;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.header__first-half {
+    display: flex;
+    color: white;
+    margin-bottom: 10px;
+    flex: 1; /* Allow the first half to take available space */
+    min-width: 200px; /* Minimum width to prevent it from getting too small */
+}
+
+.header__first-half h4 {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.header__first-half h4 img {
+    margin-right: 8px;
+}
+
+.header__second-half {
+    display: flex;
+    color: white;
+    flex: 1; /* Allow the second half to take available space */
+    justify-content: flex-end; /* Align items to the right */
+}
+
+.header__privacy,
+.header__terms {
+    padding: 0 10px; /* Adjust padding for better spacing */
+}
+
+.header__privacy {
+    border-right: 1px solid white;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack header elements vertically on small screens */
+        align-items: center; /* Center items */
+    }
+
+    .header__first-half {
+        margin-bottom: 15px; /* Add margin for spacing */
+    }
+
+    .header__second-half {
+        justify-content: center; /* Center items in second half */
+        width: 100%; /* Ensure it takes full width */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .header__first-half h4 {
+        margin-right: 10px; /* Reduce spacing between items */
+    }
+}

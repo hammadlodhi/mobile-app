@@ -1,0 +1,63 @@
+.background {
+    background-color: #9eccea;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: -17px;
+    padding-top: 40px;
+}
+
+.image-container {
+    display: flex;
+}
+
+.image-container__text {
+    position: relative;
+    left: 70px;
+    bottom: 75px;
+}
+
+.image-container__background4 {
+    position: relative;
+    bottom: 170px;
+}
+.image-container__background1 {
+    position: absolute;
+    left: 60%;
+    top: 55%;
+}
+.image-container__background1-1 {
+    position: absolute;
+    left: 80%;
+    top: 35%;
+}
+.image-container__mobile1 {
+    position: absolute;
+    left: 64%;
+    top: 45%;
+}
+.image-container__things {
+    position: absolute;
+    bottom: -55%;
+}
+.footer {
+    position: relative; 
+    display: flex; 
+    justify-content: center; 
+    right: 5%;
+}
+
+.footer__text {
+    position: absolute; 
+    top: 45%; 
+    left: 57%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+}
+
+.footer-1, .mobiles, .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center;
+}
